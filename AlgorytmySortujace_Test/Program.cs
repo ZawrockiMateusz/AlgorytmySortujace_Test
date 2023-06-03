@@ -18,10 +18,14 @@ namespace AlgorytmySortujace_Test
 
             //begin tests
             testSelectionSort(Ascending, Descending, VShaped, AShaped, Constant, Random);
+            generateData(out Ascending, out Descending, out VShaped, out AShaped, out Constant, out Random);
             testInsertionSort(Ascending, Descending, VShaped, AShaped, Constant, Random);
+            generateData(out Ascending, out Descending, out VShaped, out AShaped, out Constant, out Random);
             testMergeSort(Ascending, Descending, VShaped, AShaped, Constant, Random);
+            generateData(out Ascending, out Descending, out VShaped, out AShaped, out Constant, out Random);
             testQuickSort(Ascending, Descending, VShaped, AShaped, Constant, Random);
-            testSelectionSort(Ascending, Descending, VShaped, AShaped, Constant, Random);
+            generateData(out Ascending, out Descending, out VShaped, out AShaped, out Constant, out Random);
+            testShellSort(Ascending, Descending, VShaped, AShaped, Constant, Random);
             Console.ReadKey();
         }
         private static void testSelectionSort

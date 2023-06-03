@@ -8,7 +8,7 @@ namespace AlgorytmySortujace_Test.Logic
 {
     public static class ShellSort
     {
-        public static void Sort(List<int> keys)
+        public static List<int> Sort(List<int> keys)
         {
             int gap = keys.Count / 2;
             while (gap > 0)
@@ -26,6 +26,7 @@ namespace AlgorytmySortujace_Test.Logic
                 }
                 gap /= 2;
             }
+            return keys;
         }
     }
 }

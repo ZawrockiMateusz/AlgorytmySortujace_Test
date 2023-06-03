@@ -8,9 +8,10 @@ namespace AlgorytmySortujace_Test.Logic
 {
     public static class QuickSort
     {
-        public static void Sort(List<int> keys)
+        public static List<int> Sort(List<int> keys)
         {
             Sort(keys, 0, keys.Count - 1);
+            return keys;
         }
 
         public static void Sort(List<int> keys, int low, int high)

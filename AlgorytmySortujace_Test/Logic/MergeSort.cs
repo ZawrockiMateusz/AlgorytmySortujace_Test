@@ -8,10 +8,10 @@ namespace AlgorytmySortujace_Test.Logic
 {
     public static class MergeSort
     {
-        public static void Sort(List<int> keys)
+        public static List<int> Sort(List<int> keys)
         {
             if (keys.Count <= 1)
-                return;
+                return keys;
 
             List<int> left = new List<int>();
             List<int> right = new List<int>();
@@ -27,6 +27,7 @@ namespace AlgorytmySortujace_Test.Logic
             Sort(right);
 
             Merge(keys, left, right);
+            return keys;
         }
 
         public static void Merge(List<int> merged, List<int> left, List<int> right)
